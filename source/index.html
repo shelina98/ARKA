@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <title>ARKA EXPERIENCE</title>
-    <link rel="home" href="navigationbar.html"/>
+    <link rel="home" href="index.html"/>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="navigationbar.css" />  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,11 +18,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <style type="text/css"></style>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
     
-    <link rel="mask-icon" href="favicon.svg" color="#333f47">
+    <link rel="mask-icon" href="../assets/images/favicon.svg" color="#333f47">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#333f48">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -183,9 +183,9 @@
   margin-top:15%;
 
 }
-#image {
-animation: shela 3s ease-in-out;
-transition-duration: 1s;
+#image
+{animation: shela 4.5s ease-in-out;
+transition-duration: 1.5s;
 }
 
 @keyframes shela {
@@ -197,11 +197,10 @@ transition-duration: 1s;
          opacity: 1;
   }
   100% {
-      
+       
   }
 }
 
-}
 
 </style>
 
@@ -210,8 +209,8 @@ transition-duration: 1s;
  <div class="containerhead" style="margin-top:1vw; margin-left:3vw; margin-right: 3vw;"> 
   
     <div> 
-      <a href="navigationbar.html" style="float: left; padding: 0; z-index: 4;">
-        <img src="arka2.png" id="logo"> </a>
+      <a href="index.html" style="float: left; padding: 0; z-index: 4;">
+        <img src="../assets/images/logo.png" id="logo"> </a>
     </div>
      
     <div  class="container menu" style="float: right; padding: 0; " onclick="menuFunction(this)" >
@@ -227,13 +226,14 @@ transition-duration: 1s;
 <div id="MainMenu" class="overlay" >
   <div class="overlay-content">
 
-    <a href="two.html" >Çfarë është Arka</a>           
-    <a href="#" >Jetesa në Qytet</a>
-    <a href="#" >Të jetosh me Natyrën</a>
-    <a href="#" >Shërbimet tona</a>
-    <a href="#" >Ideja dhe Përqasja</a>
-    <a href="#" >Njerëzit tanë</a>
-    <a href="#" >Contact</a>
+    
+  <a href="cfare-eshte-arka.html" >Çfarë është Arka</a>           
+  <a href="jetesa-ne-qytet.html" >Jetesa në Qytet</a>
+  <a href="te-jetosh-me-natyren.html" >Të jetosh me Natyrën</a>
+  <a href="sherbimet-tona.html" >Shërbimet tona</a>
+  <a href="perqasja.html" >Përqasja</a>
+  <a href="njerezit-tane.html" >Njerëzit tanë</a>
+  <a href="#" >Punimet tona </a>
 
  <nav class="menu-social" >
 
@@ -250,7 +250,7 @@ transition-duration: 1s;
    <div class="row align-items-center ">
     <div class="col-2" ></div>
     <div class="col-8" id="quote">
-      <img id="image"src="first.png" width="100%">
+      <img id="image" src="../assets/images/gallery/first.png" width="100%">
     </div>
   </div>
 </div>

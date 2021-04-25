@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="description" content="ARKA – Creating unique and sustainable spaces for extraordinary life experience">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>ARKA EXPERIENCE</title>
+    <link rel="home" href="navigationbar.html"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   
+    <style type="text/css"></style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    
+    <link rel="mask-icon" href="../assets/images/favicon.svg" color="#333f47">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#333f48">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+</head>
+
+<style type="text/css">
+p {
+font-family: Open Sans;
+
+}
+
+#anashp p {
+font-size: 1em;
+}
+
+span {
+font-weight: bold;
+}
+
+  .bar1
+  {
+     width: 3.5vw;
+     height: 0.4vw;
+     transition: 0.4s;
+     background-color: rgb(51,63,72);
+  }
+  .bar2
+  {
+     width: 3.5vw;
+     height: 0.4vw;
+     margin-top:0.65vw;
+     transition: 0.4s;
+     background-color: rgb(51,63,72);
+  }
+  .bar3
+  { 
+    width: 3.5vw;
+    margin-top:0.65vw;
+    height: 0.4vw;
+    transition: 0.4s;
+    background-color: rgb(51,63,72);
+
+  }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-0.8vw, 0.5vw);
+  transform: rotate(-45deg) translate(-0.8vw, 0.5vw);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0.8vw, -0.8vw);
+  transform: rotate(45deg) translate(-0.8vw, -0.8vw);
+}
+  .menu {
+    width: 3.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (max-width: 700px){
+
+  .menu {
+    width: 7vw;
+    height: 4.4vw;
+  }
+  .bar1,.bar2,.bar3
+  { 
+    width: 7vw;
+    height: 0.8vw;
+  }
+
+  }
+
+  #logo {
+     width: 7vw;
+    height: 2.5vw;
+     }
+    
+
+  .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background-color: rgba(255,255,255, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.gallery 
+{
+  position: fixed;
+  z-index: -4;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3vw;
+
+}
+
+.overlay a {
+  text-decoration:none;
+  font-size: 4vh;
+  font-weight: 400;
+  color: rgb(51,63,72);
+  display: block;
+  transition: 0.15s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: black;
+  font-weight: 500;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.overlay-content .menu-social {
+  display: inline-flex;
+  margin-top: 4vh;
+}
+.overlay-content .menu-social  a 
+{
+  padding: 2vh;
+  transition: 0.15s;
+  text-decoration:none;
+
+}
+.overlay-content .menu-social  a:hover 
+{
+  color: black;
+  font-weight: bold;
+}
+#quote {
+  margin-top:15em;
+
+}
+
+#image {
+animation: shela 3s ease-in-out;
+transition-duration: 1s;
+}
+
+#pagecontent {
+
+  margin-left: 3vw;
+  z-index: -2;
+}
+
+#Q
+{animation: shela 4.5s ease-in-out;
+transition-duration: 1.5s;
+}
+
+@keyframes shela {
+  0% {
+        opacity: 0;
+        
+       } 
+  50% {
+         opacity: 1;
+  }
+  100% {
+       
+  }
+}
+
+
+
+
+
+.containerhead {
+  top:0em;
+  left:2em; 
+  right:2em; 
+  z-index: 4; 
+  height: 4em; 
+  position:fixed; 
+  background-color: white; 
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-right: -2em;
+  margin-left: -2em;
+}
+
+
+
+</style>
+
+<body>
+
+ <div class="containerhead">
+
+       <a href="index.html" style="float: left; padding: 0; position: absolute; ">
+        <img src="../assets/images/logo.png" id="logo"> </a>
+  
+     <p style="font-weight: 100; font-size:1.5em; font-family: Open Sans; padding: 0; opacity:0.6;position: absolute; float: center; margin-left: 8vw; margin-top: .3em;  z-index: -2;">
+     <a href="sherbimet-tona.html" style="text-decoration: none; color: rgb(51,63,72);"> Shërbimet tona </a>
+    </p>
+    <div  class="container menu" style="float: right; padding: 0; " onclick="menuFunction(this)" >
+       <div class="bar1"></div>
+       <div class="bar2"></div>
+       <div class="bar3"></div>
+
+    </div>  
+</div>
+
+<div id="MainMenu" class="overlay" >
+  <div class="overlay-content">
+
+    <a href="cfare-eshte-arka.html" >Çfarë është Arka</a>           
+  <a href="jetesa-ne-qytet.html" >Jetesa në Qytet</a>
+  <a href="te-jetosh-me-natyren.html" >Të jetosh me Natyrën</a>
+  <a href="sherbimet-tona.html" >Shërbimet tona</a>
+  <a href="perqasja.html" >Përqasja</a>
+  <a href="njerezit-tane.html" >Njerëzit tanë</a>
+  <a href="#" >Punimet tona </a>
+
+ <nav class="menu-social" >
+
+    <a href="https://www.facebook.com/arkaexperience/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/arka_concept/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+    <a href="#"> EN </a>
+
+</nav>
+  </div>
+</div>
+
+
+<div class="container2" style="margin-left: 2em; margin-right: 2em;  margin-top: 4em;" id="Q" >
+<div class="row align-items-center">
+<div class="col-4"></div>
+    <img src="../assets/images/other/GRAFIKSHERBIMET_02.png" width="55%;" style="float:right;" >
+</div>
+       
+
+    <div class="row" style="margin-top:4em;">
+            <div class="col-4"></div>
+          <div class="col-7"   >
+            
+             <p style=" font-size: 1.2em; font-family: Open Sans;;"  > Arka ofron shërbime profesionale të integruara në fushën e investimeve në prona të paluajtshme. Për të ofruar këto shërbime, ne përqendrohemi tek ndërlidhja e strukturuar e projektimit arkitektonik me vlerësimin e politikave urbane dhe territoriale, aspekteve social-kulturore dhe leverdisshmërisë ekonomike.    </p>
+             <p style=" font-size: 1.2em; font-family: Open Sans;  " > Arka i përgjigjet nevojave dhe kërkesave të klientëve individë, sipërmarrësve dhe zhvilluesve në sektorin e pronave të paluajtshme nëpërmjet katër linjave shërbimi.    </p>
+           
+            </div>
+          <div class="col-1"></div>
+      </div>
+
+      <div class="row" style="margin-top:5em;">
+        <div class="col-4"  >
+          <p style="font-size:2em; font-weight: 700;"> Kërkime dhe studime</p>
+          <img src="../assets/images/gallery/erkime-studime.png" width="40%"style="opacity: 0.6;" >
+        </div>
+    
+        <div class="col-7" ><p style="font-size:1.2em;">Nëpërmjet shërbimeve të kërkimit dhe studimit, Arka ndihmon klientët të identifikojnë dhe të vlerësojnë mundësi investimi në zona, prona, apo struktura të paluatjshme me potencial të lartë zhvillimor dhe ekonomiko-financiar. Këto studime fizibiliteti kryhen duke e vlerësuar pronën në disa nivele: në nivel projekti individual, si pjesë e bllokut të banimit dhe brenda sistemit territorial. Studimet marrin në konsideratë potencialin ekonomik, burimet e financimit, politikat e zhvillimit të zonës dhe ato fiskale.</p>
+    
+        </div>
+    
+    
+        <div class="col-1"></div>
+    
+    </div>
+    <div class="row" style="margin-top:5em;">
+        <div class="col-4"  >
+          <p  style="font-size:2em; font-weight: 700;"> Propozime, koncept-ide</p>
+          <img src="../assets/images/gallery/kocept-ide.png" width="40%" style="opacity: 0.6;" >
+        </div>
+    
+        <div class="col-7" ><p style="font-size:1.2em;">Arka ofron për klientët projekt-ide për zhvillim dhe investim në prona të paluajtshme në kontekstin urban dhe rural. Propozimet tona përmbushin kërkesat e klientëve për zhvillimin e hapësirave të banimit, mikpritjes dhe atyre multifunksionale. Këto zgjidhje marrin në konsideratë mundësinë e rigjenerimit të hapësirave me anë të përshtatjes dhe ripërdorimit të strukturave ekzistuese, ose me anë të ndërhyrjeve të reja ndërtimore.</p>
+    
+        </div>
+    
+    
+        <div class="col-1"></div>
+    
+    </div>
+    <div class="row" style="margin-top:5em;">
+        <div class="col-4"  >
+          <p  style="font-size:2em; font-weight: 700;"> Projekt arkitektonik</p>
+          <img src="../assets/images/gallery/projektedhegjera.png" width="40%" style="opacity: 0.6;" >
+        </div>
+    
+        <div class="col-7" ><p style="font-size:1.2em;">Arka ofron shërbime në fushën e projektimit dhe planifikimit urban, arkitekturës, interior design dhe arkitekturës së peizazhit. Projektet tona ndihmojnë klientët të përmirësojnë cilësinë e jetës, nëpërmjet krijimit të hapësirave empatike, të qëndrueshme dhe që i rezistojnë kohës. Veprat arkitektonike që krijojmë së bashku janë në harmoni me kontekstin dhe njëkohësisht të veçanta. Ne ndërthurim teknologjitë bashkëkohore dhe materialet cilësore me ato vendase, duke ulur njëkohësiht ndikimin mjedisor dhe koston e investimit.</p>
+    
+        </div>
+    
+    
+        <div class="col-1"></div>
+    
+    </div>
+    <div class="row" style="margin-top:5em; margin-bottom: 5em;">
+        <div class="col-4"  >
+          <p  style="font-size:2em; font-weight: 700;">Menaxhim projekti</p>
+          <img src="../assets/images/gallery/manaxhim.png" width="40%" style="opacity: 0.6;" >
+        </div>
+    
+        <div class="col-7" ><p style="font-size:1.2em;">Arka ndihmon klientët të menaxhojnë efektivisht zbatimin e projekteve të tyre zhvillimore, qofshin ato shtëpi banimi në natyrë, apo investime në kontekstin urban, duke marrë përgjegjësi për planifikimin dhe zbatimin operacional. Ne kujdesemi për zbatimin e projekteve në kohë, identifikimin dhe përdorimin e teknikave dhe burimeve që optimizojnë kostot dhe garantimin e cilësisë së lartë të punimeve.</p>
+    
+        </div>
+    
+    
+        <div class="col-1"></div>
+    
+    </div>
+    
+
+    
+
+
+   
+
+</div>
+
+<script>
+  var open=false;
+
+function menuFunction(x) {
+
+  x.classList.toggle("change");
+
+  if(!open)
+  {
+    document.getElementById("MainMenu").style.height = "100%";
+    open=true;
+  }
+else {
+   document.getElementById("MainMenu").style.height = "0%";
+   open=false;
+  }
+}
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

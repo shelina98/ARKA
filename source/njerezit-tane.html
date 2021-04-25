@@ -1,0 +1,427 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<style type="text/css"></style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+
+<link rel="mask-icon" href="../assets/images/favicon.svg" color="#333f47">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#333f48">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  
+
+  <script>
+
+    $(function(){
+
+setTimeout(function(){
+
+$("#Q").fadeOut("slow")} ,6000)
+
+});
+
+
+</script>
+<script >
+
+    $(function(){
+
+setTimeout(function(){
+$("#foto1").fadeIn("slow")} , 6000)
+
+});
+</script>
+
+</head>
+
+<style type="text/css">
+
+.containerhead {
+  top:0em;
+  left:2em; 
+  right:2em; 
+  z-index: 4; 
+  height: 4em; 
+  position:fixed; 
+  background-color:white;
+  padding-top: 1em; 
+ 
+ 
+}
+  .bar1
+  {
+     width: 3em;
+     height: 0.35em;
+     transition: 0.4s;
+     background-color: rgb(51,63,72);
+  }
+  .bar2, .bar3
+  {
+     width: 3em;
+     height: 0.35em;
+     margin-top:0.5em;
+     transition: 0.4s;
+     background-color: rgb(51,63,72);
+  }
+
+  .change .bar1 {
+  -webkit-transform: rotate(-45deg)   translate(0em,1.2em) ;
+  transform:  rotate(-45deg)   translate(0em,1.2em) ;
+  width: 2.5em;
+  
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+  -webkit-transform: rotate(45deg)   translate(0em,-1.2em);
+  transform:rotate(45deg)  translate(0em,-1.2em) ;
+  width: 2.5em;
+  }
+
+.menu {
+width: 3em;
+height: 2.5em;
+cursor: pointer;
+padding: 0;
+margin: 0;
+}
+
+
+
+
+
+#logo {
+ width: 7vw;
+height: 2.5vw;
+ }
+
+
+.overlay {
+height: 0%;
+width: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: white;
+background-color: rgba(255,255,255, 1);
+overflow-y: hidden;
+transition: 0.5s;
+}
+
+
+.gallery
+{
+position: fixed;
+z-index: -4;
+transition: 0.5s;
+}
+
+
+
+
+.overlay-content {
+position: relative;
+top: 15%;
+width: 100%;
+text-align: center;
+justify-content: center;
+margin-top: 3em;
+
+}
+
+.overlay a {
+text-decoration: none;
+font-size: 1.5em;
+font-weight: 400;
+color: rgb(51,63,72);
+display: block;
+transition: 0.15s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: black;
+font-weight: 500;
+}
+
+@media screen and (max-height: 450px) {
+.overlay {overflow-y: auto;}
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+}
+
+.overlay-content .menu-social {
+display: inline-flex;
+margin-top: 1.5em;
+}
+
+.overlay-content .menu-social  a
+{
+padding: 0.8em;
+transition: 0.15s;
+text-decoration:none;
+
+}
+.overlay-content .menu-social  a:hover
+{
+color:rgb(51,63,72);
+font-weight: bold;
+}
+
+
+
+#quote {
+margin-top:15em;
+
+}
+
+#image {
+animation: shela 3s ease-in-out;
+transition-duration: 1s;
+}
+
+#pagecontent {
+
+margin-left: 3vw;
+z-index: -2;
+}
+
+#Q
+{animation: shela 4s ease-in-out;
+transition-duration: 1.5s;
+}
+
+@keyframes shela {
+  0% {
+        opacity: 0;
+        
+       } 
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#logo {
+    float: left;
+     padding: 0; 
+     position: absolute; 
+}
+
+.pageTitle {
+    font-weight: 100; 
+    font-size: 1.5em; 
+    font-family: Open Sans;
+    padding: 0;
+    opacity: 0.6;
+    position: absolute;
+    float: center; 
+    margin-left: 4.5em; 
+    margin-top: .18em; 
+}
+
+.more {display: none;}
+#read1 {
+    cursor: pointer;
+}
+#read2 {
+    cursor: pointer;
+}
+
+.email:hover {
+  
+    
+    font-weight: bold; 
+}
+
+</style>
+
+<body>
+
+<div class="containerhead">
+     <a href="index.html"> <img src="../assets/images/logo.png" id="logo"> </a>
+
+ <p class="pageTitle">
+
+ <a href="njerezit-tane.html" style="text-decoration: none; color: rgb(51,63,72);"> Njerëzit tanë</a>
+</p>
+<div  class="container menu" style="float: right; padding: 0; " onclick="menuFunction(this)" >
+   <div class="bar1"></div>
+   <div class="bar2"></div>
+   <div class="bar3"></div>
+
+</div>
+</div>
+
+<div id="MainMenu" class="overlay" >
+<div class="overlay-content">
+
+  <a href="cfare-eshte-arka.html" >Çfarë është Arka</a>           
+  <a href="jetesa-ne-qytet.html" >Jetesa në Qytet</a>
+  <a href="te-jetosh-me-natyren.html" >Të jetosh me Natyrën</a>
+  <a href="sherbimet-tona.html" >Shërbimet tona</a>
+  <a href="perqasja.html" >Përqasja</a>
+  <a href="njerezit-tane.html" >Njerëzit tanë</a>
+  <a href="#" >Punimet tona </a>
+
+<nav class="menu-social" >
+
+<a href="https://www.facebook.com/arkaexperience/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/arka_concept/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+<a href="#"> EN </a>
+
+</nav>
+</div>
+</div>
+
+
+<div style="z-index: 4; display: none; margin-left: 2em; margin-right: 2em; margin-top:4em;" id="foto1">
+
+
+    <div class="row" >
+
+     
+        <div class="col-3" style="margin-top: 2em; text-align: right;">
+            <p  style="font-family: Open Sans; font-size: 1em; margin-top: 0.5em;"> <a href="mailto:dkapo@arka.com.al" style="text-decoration: none; color: black;" class="email" >dkapo@arka.com.al</a> </p>
+            <p  style="font-family: Open Sans; font-size: 1em; margin-top: -1em;"> +355 68 908 6047 </p> 
+
+            </div>
+            <div class="col-3" style="margin-top: 2em;"> 
+            <p style="font-family: Open Sans; font-size: 1.2em;">Dritan KAPO, Co-Founder <span style="font-weight: bold;">Creative Director</span> </p>
+        </div>
+        <div class="col-3" style="margin-top: 2em; text-align: right;"> 
+            <p  style="font-family: Open Sans; font-size: 1em; margin-top: 0.5em;"> <a href="mailto:astringa@arka.com.al" style="text-decoration: none; color: black;" class="email">astringa@arka.com.al</a> </p>
+            <p  style="font-family: Open Sans; font-size: 1em; margin-top: -1em;"> +355 67 277 9119 </p> 
+        </div>
+        <div class="col-3" style="margin-top: 2em;"> <p style="font-family: Open Sans; font-size: 1.2em;">Azmi STRINGA, Co-Founder  <span style="font-weight: bold;">Operations & Finance Director</span></p></div>
+
+
+    </div>
+
+        <div class="row" >
+             
+            <div class="col-3" > <img src="../assets/images/people/dk.jpg" width="100%;"></div>
+            <div class="col-3" > 
+                <p style="font-family: Open Sans; font-size: 1em;">Dritan Kapo është arkitekt dhe lektor pranë FAU, në Universitetin Politeknik të Tiranës. Ai diplomohet me Master Shkencor në Arkitekturë<span class="dots">...</span> <span class="more">pranë Universitetit të Firences dhe prej më shumë se një dekade ushtron profesionin në projektimin dhe zbatimin arkitektonik. Ekspertiza e tij profesionale përqëndrohet në strukturat e banimit, dëfrimit dhe ato të mikpritjes, nëpërmjet projekteve që promovimojnë aspektet identitare dhe trashëgiminë kulturore-natyrore. Hulumtimi i tij akademik përqëndrohet në zhvillimin e qëndrueshëm urban-rural, adaptimin arkitektonik, projektimin dhe teknologjinë arkitekturore. </span>  <span onclick="read1Function()" id="read1" style="font-weight: bold; ">Read more</span></p>
+                
+           
+            </div>
+            <div class="col-3" > <img src="../assets/images/people/as.jpg" width="100%;"></div>
+            <div class="col-3" >
+                <p style="font-family: Open Sans; font-size: 0.95em;">Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short <span class="dots">...</span> <span class="more"> bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion. </span> <span onclick="read2Function()" id="read2" style="font-weight: bold; ">Read more</span></p>
+            </div>
+
+
+        </div>
+
+
+        <div class="row" style="margin-top: 10em;">
+        
+            <div class="col-3">
+                <p style="font-size:2em; font-weight: 700; font-family: Open Sans;">Partnerët tanë</p>
+                <img src="../assets/images/people/faces02.png" width="100%;" style="margin-top: 7.5em;"> 
+            </div>
+        <div class="col-1"></div>
+            <div class="col-7" >
+              <p style="font-family: Open Sans; font-size: 1.2em;">Për të maksimizuar vlerën e projekteve zhvillimore dhe përmbushur me sukses angazhimet tona ndaj klientëve, Arka mbështetet në një rrjet të gjerë partnerësh të jashtëm. Këta profesionistë dhe kërkues shkencorë kanë ekspertizë në aspekte të rëndësishme për suksesin e projekteve zhvillimore si: politika sociale, dizajn, arkitekturë dhe projektim urban, transport të qëndrueshëm, aspekte ligjore dhe rregullatore, vlerësime tregu dhe pronash të paluajtshme, mirëqenie komunitare, planifikim urban dhe mjedisor, dhe projekte kulturore e artistike.</p>
+              <p style="font-family: Open Sans; font-size: 1.2em;">Arka gjithashtu bashkëpunon me organizata private dhe publike për të adresuar më mirë sfidat e sektorit dhe kërkesat e klientëve, vecanërisht aspekte si: nxitja e marrëdhënieve të shëndetshme njerëzore, promovimi i burimeve vendase, mbrojtja e trashëgimisë kulturore dhe asaj mjedisore.</p>
+              <p style="font-family: Open Sans; font-size: 1.2em;">Nëse dëshironi të beheni pjesë e familjes së Arkës, ju lutemi të dërgoni aplikimin, CV, dhe portfolin tuaj në adresën tonë të kontaktit <a href="mailto:info@arka.com.al" style="text-decoration: none; color: black; " class="email">info@arka.com.al </p>
+            
+            </div>
+      
+         </div>
+
+ </div>
+        
+      
+ 
+
+    <div class="row align-items-center ">
+        <div class="col-2" > </div>
+        <div class="col-8" id="quote">
+          <p style=" font-size: 1.5em; font-family: Open Sans;  font-weight: 100;" id="Q">
+            Arka ka bërë bashkë një grup profesionistësh me ekspertizë shumë disiplinore në shërbim të klientëve dhe projekteve zhvillimore.
+        </p>
+        </div>
+      </div>
+    
+
+      <script>
+
+function read1Function() {
+  var dots = document.getElementsByClassName("dots");
+  var moreText = document.getElementsByClassName("more");
+  var read1 = document.getElementById("read1");
+  if (dots[0].style.display === "none") {
+    dots[0].style.display = "inline";
+    read1.innerHTML = "Read more"; 
+    moreText[0].style.display = "none";
+  } else {
+    dots[0].style.display = "none";
+    read1.style.display="none"; 
+    moreText[0].style.display = "inline";
+  }
+}
+</script>
+<script>
+function read2Function() {
+    var dots = document.getElementsByClassName("dots");
+    var moreText = document.getElementsByClassName("more");
+    var read2 = document.getElementById("read2");
+
+    if (dots[1].style.display === "none") {
+      dots[1].style.display = "inline";
+      read2.innerHTML = "Read more"; 
+      moreText[1].style.display = "none";
+    } else {
+      dots[1].style.display = "none";
+      read2.style.display="none"; 
+      moreText[1].style.display = "inline";
+    }
+  }
+  </script>
+  
+
+
+
+<script>
+var open=false;
+
+function menuFunction(x) {
+
+x.classList.toggle("change");
+
+if(!open)
+{
+document.getElementById("MainMenu").style.height = "100%";
+open=true;
+}
+else {
+document.getElementById("MainMenu").style.height = "0%";
+open=false;
+}
+}
+</script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
