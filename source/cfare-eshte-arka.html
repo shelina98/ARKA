@@ -1,11 +1,17 @@
+<meta name="description" content="arka – Creating unique and sustainable spaces for extraordinary life experience">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>arka</title>
+  <link rel="home" href="//www.arka.com.al/" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-<style type="text/css"></style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="arka.css">
 
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
@@ -18,57 +24,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+ <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
   <script>
 
-      $(function(){
-setTimeout(function(){
 
- $("#Q").fadeOut("slow") } , 6500)
 
-});
-
-</script>
-<script>
-
-  $(function(){
-
-setTimeout(function(){
-
-$("#nje").fadeIn("slow") } , 0)
+      $(function()
+      
+      {
+setTimeout(function()
+{
+ $("#cfareshprehje").fadeOut("slow") } , 5500)
 
 });
-
-
-
-</script>
-
-<script>
-
-  $(function(){
-
-setTimeout(function(){
-
-$("#dy").fadeIn("slow") } , 2000)
-
-});
-
-
-
-</script>
-
-
-<script>
-
-  $(function(){
-
-setTimeout(function(){
-
-$("#tre").fadeIn("slow") } , 4000)
-
-});
-
-
 
 </script>
 
@@ -77,172 +46,76 @@ $("#tre").fadeIn("slow") } , 4000)
       $(function(){
 
 setTimeout(function(){
- $("#foto1").fadeIn("slow")} , 6500)
+ $(".kontent").fadeIn("slow")} , 5500)
 
 });
 </script>
-
-
-
-
 </head>
 
 <style type="text/css">
 
-.bar1
-{
- width: 3.5vw;
- height: 0.4vw;
- transition: 0.4s;
- background-color: rgb(51,63,72);
+#Q
+{ animation: shela 4s ease-in-out;
+  transition-duration: 2s;
+  font-size: 1.5em;
+  font-family: Open Sans;  
+  text-align: center;
 }
-.bar2
-{
- width: 3.5vw;
- height: 0.4vw;
- margin-top:0.65vw;
- transition: 0.4s;
- background-color: rgb(51,63,72);
-}
-.bar3
-{
-width: 3.5vw;
-margin-top:0.65vw;
-height: 0.4vw;
-transition: 0.4s;
-background-color: rgb(51,63,72);
-
-}
-
-.change .bar1 {
--webkit-transform: rotate(-45deg) translate(-0.8vw, 0.5vw);
-transform: rotate(-45deg) translate(-0.8vw, 0.5vw);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
--webkit-transform: rotate(45deg) translate(-0.8vw, -0.8vw);
-transform: rotate(45deg) translate(-0.8vw, -0.8vw);
-}
-.menu {
-width: 3.5vw;
-height: 2.5vw;
-cursor: pointer;
-padding: 0;
-margin: 0;
-}
-
-@media (max-width: 700px){
-
-.menu {
-width: 7vw;
-height: 4.4vw;
-}
-.bar1,.bar2,.bar3
-{
-width: 7vw;
-height: 0.8vw;
-}
-
-}
-
-#logo {
- width: 7vw;
-height: 2.5vw;
+#cfareshprehje {
+      margin-left:2em;
+      margin-right: 2em;
+      padding: 0;
+      height: 100%;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      
  }
 
+ #mmob,#vmob,#pmob {
+   display: none;
+   background-color: white;
+   z-index: 2;
+ }
+  @media screen and (min-width: 900px)  {
 
-.overlay {
-height: 0%;
-width: 100%;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background-color: white;
-background-color: rgba(255,255,255, 1);
-overflow-y: hidden;
-transition: 0.5s;
+
+      #Q {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+
+     
 }
-.gallery
+
+@media screen and (min-width:1300px) {
+  #Q  {
+        font-size: 2em;
+      }
+
+}
+
+@media screen and (max-width:576px) 
 {
-position: fixed;
-z-index: -4;
-transition: 0.5s;
+  #cfareshprehje {
+      margin-left:0.8em;
+      margin-right: 0.8em;
+      padding: 0;
+    }
+ 
+  #Q {
+    font-size: 1.5em ;
+  }
+  #mmob,#vmob,#pmob {
+  display: block;
+  background-color:rgba(255,255,255, 1)!important;
+  opacity: 1;
 }
-.overlay-content {
-position: relative;
-top: 15%;
-width: 100%;
-text-align: center;
-justify-content: center;
-margin-top: 3vw;
-
-}
-
-.overlay a {
-text-decoration:none;
-font-size: 4vh;
-font-weight: 400;
-color: rgb(51,63,72);
-display: block;
-transition: 0.15s;
-}
-
-.overlay a:hover, .overlay a:focus {
-color: black;
-font-weight: 500;
-}
-
-@media screen and (max-height: 450px) {
-.overlay {overflow-y: auto;}
-.overlay a {font-size: 20px}
-.overlay .closebtn {
-font-size: 40px;
-top: 15px;
-right: 35px;
+#mpc,#vpc, #ppc {
+  display: none;
 }
 }
-
-.overlay-content .menu-social {
-display: inline-flex;
-margin-top: 4vh;
-}
-.overlay-content .menu-social  a
-{
-padding: 2vh;
-transition: 0.15s;
-text-decoration:none;
-
-}
-.overlay-content .menu-social  a:hover
-{
-color: black;
-font-weight: bold;
-}
-
-#quote {
-margin-top:15em;
-
-}
-
-#image {
-animation: shela 3s ease-in-out;
-transition-duration: 1s;
-}
-
-#pagecontent {
-
-margin-left: 3vw;
-z-index: -2;
-}
-
-#Q
-{animation: shela 2s ease-in-out;
-transition-duration: 1s;
-}
-
 @keyframes shela {
   0% {
         opacity: 0;
@@ -252,42 +125,52 @@ transition-duration: 1s;
     opacity: 1;
   }
 }
-
-.containerhead {
-top:0em;
-left:2em;
-right:2em;
-z-index: 4;
-height: 4em;
-position:fixed;
-background-color: white;
-padding-top: 1em;
-padding-right: 2em;
-padding-left: 2em;
-margin-right: -2em;
-margin-left: -2em;
+@media screen and (width:576px) 
+{
+  #cfareshprehje {
+      margin-left:0.8em;
+      margin-right: 0.8em;
+      padding: 0;
+    }
+ 
+  #Q {
+    font-size: 1.5em ;
+  }
+  #mmob,#vmob,#pmob {
+  display: none;
+  background-color:rgba(255,255,255, 1)!important;
+  opacity: 1;
 }
-
-div.sticky {
+#mpc,#vpc, #ppc {
+  display: block;
+}
+}
+@keyframes shela {
+  0% {
+        opacity: 0;
+        
+       } 
+  100% {
+    opacity: 1;
+  }
+}
+div.sticky4 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  top:2em;
+  top:4em;
 }
-
 </style>
 
 <body>
 
 <div class="containerhead">
-
-        <a href="index.html" style="float: left; padding: 0; position: absolute; ">
-    <img src="../assets/images/logo.png" id="logo"> </a>
-
- <p class="pageTitle" style="font-weight: 100; font-size:1.5em; font-family: Open Sans; padding: 0; opacity: 0.6; position: absolute; float: center; margin-left: 8vw; margin-top: .3em; ">
- <a href="cfare-eshte-arka.html" style="text-decoration: none; color: rgb(51,63,72);"> Çfarë është Arka </a>
+<a href="index.html"> <img src="../assets/images/Trekonc/logo.png" id="logo"> </a>
+ <p class="pageTitle">
+ <a href="cfare-eshte-arka.html" > Çfarë është Arka </a>
 </p>
-<div  class="container menu" style="float: right; padding: 0; " onclick="menuFunction(this)" >
+
+<div  class="container menubox">
    <div class="bar1"></div>
    <div class="bar2"></div>
    <div class="bar3"></div>
@@ -295,8 +178,8 @@ div.sticky {
 </div>
 </div>
 
-<div id="MainMenu" class="overlay" >
-<div class="overlay-content">
+<div class="ShtresaMenu" >
+<div class="ShtresaMenu-content">
 
   <a href="cfare-eshte-arka.html" >Çfarë është Arka</a>           
   <a href="jetesa-ne-qytet.html" >Jetesa në Qytet</a>
@@ -304,151 +187,193 @@ div.sticky {
   <a href="sherbimet-tona.html" >Shërbimet tona</a>
   <a href="perqasja.html" >Përqasja</a>
   <a href="njerezit-tane.html" >Njerëzit tanë</a>
-  <a href="#" >Punimet tona </a>
+  <a href="#" > News </a>
 
 <nav class="menu-social" >
 
-<a href="https://www.facebook.com/arkaexperience/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-<a href="https://www.instagram.com/arka_concept/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-<a href="#"> EN </a>
+  <a href="https://www.facebook.com/arkaexperience/" ><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/arka_concept/" ><i class="fab fa-instagram"></i></a>
+  <a href="#" ><i class="fab fa-twitter"></i> </a>
+  <a href="#" > <i class="fab fa-linkedin-in"></i></a>
 
 </nav>
 </div>
 </div>
 
 
-<div style="z-index: 4; display: none; margin-left: 2em; margin-right: 2em; margin-top:4em;" id="foto1">
+<div  class="kontent" >
+
+    <img src="../assets/images/Cfare/misioni01.jpg " width="100%"  id="cfarefoto">
+    <img src="../assets/images/Cfare/02_01_cel.jpg"  width="100%"   id="cfaremobile">
 
 
 
-    <img src="../assets/images/misioni-vizioni.jpg" style=" width:100%;" >
-    <div class="row" style="margin-left: 2em; padding:0; margin-top: 15vh; z-index: -2;">
-        <div class="col-4" style="font-weight: 700; font-size: 2em; padding: 0; margin-top: -1vw;font-family: Open Sans; "> <div class="sticky"> Misioni </div></div>
-        <div class="col-7"><p style="font-size: 1.2em; font-family: Open Sans; "> Arka ofron shërbime profesionale të integruara në fushën e investimeve në prona të paluajtshme. Misioni ynë është të krijojmë vlerë për klientët tanë nëpërmjet shërbimeve inovative dhe të përkushtuara. Veprimtaria jonë ka për qëllim të rrisë standardet e jetesës, të përmirësojë marrëdhëniet njerëzore dhe të zhvillojë përgjegjësinë sociale, duke ofruar përjetime pozitive, që nxjerrin në pah më të mirën e secilit prej pjesëtarëve të një komuniteti. Ne punojmë për krijimin e një shoqërie të shëndetshme, paqësore dhe dashamirëse.</p></div>
-        <div class="col-1"></div>
+    <div class="row  rresht">
+        <div class=" col-sm-4 col-md-4 rrtitull" id="mpc">  <div class="sticky"> Misioni </div></div>
+        <div class=" col-sm-8  knopad col-md-7">
+          <div class="sticky4 " id="mmob"> <p class="rrtitull"> Misioni</p> </div>
+          <p class="paragmisioni"> Arka ofron shërbime profesionale të integruara në fushën e investimeve në prona të paluajtshme. Misioni ynë është të krijojmë vlerë për klientët tanë nëpërmjet shërbimeve inovative dhe të përkushtuara. Veprimtaria jonë ka për qëllim të rrisë standardet e jetesës, të përmirësojë marrëdhëniet njerëzore dhe të zhvillojë përgjegjësinë sociale, duke ofruar përjetime pozitive, që nxjerrin në pah më të mirën e secilit prej pjesëtarëve të një komuniteti. Ne punojmë për krijimin e një shoqërie të shëndetshme, paqësore dhe dashamirëse.</p></div>
+        <div class="col-md-1"></div>
     </div>
     
     
+  
+    <div class="row rresht" >
+        <div class="col-sm-4 col-md-4 rrtitull" id="vpc"> <div class="sticky"> Vizioni </div></div>
+        <div class="col-sm-8 col-md-7 knopad">
+          <div class="sticky4 " id="vmob"> <p class="rrtitull"> Vizioni</p> </div>
+          <p class="paragmisioni"> Vizioni i Arkës është të jetë një inkubator idesh novatore, ku falë bashkimit dhe bashkëpunimit multidisiplinor, të krijohen dhe zbatohen përgjigje efikase ndaj sfidave të së ardhmes në fushën e zhvillimit urban dhe rural. Pjesëmarrja e klientëve dhe e komunitetit më të gjerë në procesin e krijimit dhe të zbatimit të projekteve zhvillimore është element themelor i vizionit tonë. Shërbimet tona kanë në qendër të tyre njeriun, duke i dhënë kështu jetë jo vetëm projekteve, por edhe duke e shndërruar procesin e punës në një eksperiencë përmbushëse.</p>
     
-    <div class="row" style="margin-left: 2em; padding:0; margin-top: 15vh;">
-        <div class="col-4" style="font-weight: 700; font-size: 2em; padding: 0; margin-top: -1vw;font-family: Open Sans; "> <div class="sticky"> Vizioni </div></div>
-        <div class="col-7"><p style="font-size: 1.2em; font-family: Open Sans; "> Vizioni i Arkës është të jetë një inkubator idesh novatore, ku falë bashkimit dhe bashkëpunimit multidisiplinor, të krijohen dhe zbatohen përgjigje efikase ndaj sfidave të së ardhmes në fushën e zhvillimit urban dhe rural. Pjesëmarrja e klientëve dhe e komunitetit më të gjerë në procesin e krijimit dhe të zbatimit të projekteve zhvillimore është element themelor i vizionit tonë. Shërbimet tona kanë në qendër të tyre njeriun, duke i dhënë kështu jetë jo vetëm projekteve, por edhe duke e shndërruar procesin e punës në një eksperiencë përmbushëse.</p>
-    
-        <p  style="font-size: 1.2em; font-family: Open Sans;"> Arka beson se ne lidhemi me hapësirën nëpërmjet përjetimeve tona. Ne jemi të fokusuar tek cilësia dhe e bukura, me bindjen që një punë e bërë mirë kërkon pasion dhe përkushtim. Projektet zhvillimore që sjellin vlerë, janë ato që respektojnë dhe nxisin ndërveprimin harmonik të njeriut me natyrën, komunitetin dhe kontekstin kulturor.</p></div>
-        <div class="col-1"></div>
-    
-    </div>
-    
-    <div class="row" style="margin-left: 2em; margin-right:2em; padding:0; margin-top: 15vh;">
-      <div class="col-4"></div>
-      <div class="col-8"> <img src="../assets/images/parimet.png" width="90%;" style="opacity: 0.6;"></div>
+        <p   class="paragmisioni"> Arka beson se ne lidhemi me hapësirën nëpërmjet përjetimeve tona. Ne jemi të fokusuar tek cilësia dhe e bukura, me bindjen që një punë e bërë mirë kërkon pasion dhe përkushtim. Projektet zhvillimore që sjellin vlerë, janë ato që respektojnë dhe nxisin ndërveprimin harmonik të njeriut me natyrën, komunitetin dhe kontekstin kulturor.</p></div>
+        <div class="col-md-1"></div>
     
     </div>
     
+    <div class="row rresht" >
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8 knopad">
+
+      <img src="../assets/images/Cfare/parimet.png" width="90%;" style="opacity: 0.6;" id="parfoto">
+
+      <img src="../assets/images/Cfare/02_02_cel.jpg" width="100%;" style="opacity: 0.6;" id="parmobile"></div>
+    
+    </div>
     
     
-    <div class="row" style="margin-left: 3vw; padding:0; margin-top: 15vh;">
+    <div class="row rresht" >
     
-         <div class="col-4" style="font-weight: 700; font-size:2em; padding: 0; margin-top: -1vw;font-family: Open Sans; "> <div class="sticky"> Parimet </div></div>
+         <div class="col-sm-4 col-md-4 rrtitull" id="ppc" > <div class="sticky"> Parimet </div></div>
     
-        <div class="col-7">
-         <p  style="font-size: 1.2em; font-family: Open Sans;"> Në filozofinë tonë, misioni dhe vizioni i shoqërisë mund të përmbushen vetëm nëse i qëndrojmë besnik disa parimeve të patjetërsueshme.</p>
+        <div class="col-sm-8 col-md-7 knopad">
+
+          <div class="sticky4 " id="pmob"> <p class="rrtitull"> Parimet</p> </div>
+
+              <p  class="paragmisioni"> Në filozofinë tonë, misioni dhe vizioni i shoqërisë mund të përmbushen vetëm nëse i qëndrojmë besnik disa parimeve të patjetërsueshme.</p>
     
     
-            <div class="row" style="margin-top: 4em;">
-                <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em; font-weight: 700; ">Vlerësojmë unikalitetin dhe individualitetin </p>
-                    <p style="font-size: 1em;">Ne kuptojmë që çdo klient është i ndryshëm, ka nevoja dhe dëshira që e dallojnë nga të tjerët. Krijimi i veprave të dedikuara dhe autentike i jep ngjyra punës tonë dhe nxjerr në pah individualitetin e klientëve tanë.</p>
+            <div class="row rreshtp" >
+                <div class="col-lg-6 " > <p  class="titullparime">Vlerësojmë unikalitetin dhe individualitetin </p>
+                    <p class="paragparime">Ne kuptojmë që çdo klient është i ndryshëm, ka nevoja dhe dëshira që e dallojnë nga të tjerët. Krijimi i veprave të dedikuara dhe autentike i jep ngjyra punës tonë dhe nxjerr në pah individualitetin e klientëve tanë.</p>
                 </div>
-                <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em; font-weight: 700;  ">Veprojmë me integritet dhe ndershmëri </p>
-                    <p style="font-size: 1em;">Integriteti dhe ndershmëria janë thelbësore për marrëdhënie të shëndetshme dhe përmbushëse me klientët tanë, partnerët dhe komunitetin. Ne punojmë me integritet dhe ndershmëri edhe në respekt të produktit që realizojmë. Ne mbajmë përgjegjësi për angazhimet që ndërmarrim pa kërkuar justifikime. Ne nuk sakrifikojmë vlerat afatgjata për fitime afatshkurtra.</p>
+                <div class="col-lg-6 "> <p class="titullparime">Veprojmë me integritet dhe ndershmëri </p>
+                    <p class="paragparime">Integriteti dhe ndershmëria janë thelbësore për marrëdhënie të shëndetshme dhe përmbushëse me klientët tanë, partnerët dhe komunitetin. Ne punojmë me integritet dhe ndershmëri edhe në respekt të produktit që realizojmë. Ne mbajmë përgjegjësi për angazhimet që ndërmarrim pa kërkuar justifikime. Ne nuk sakrifikojmë vlerat afatgjata për fitime afatshkurtra.</p>
                 </div>
             </div>
     
     
-            <div class="row" style="margin-top: 4em;">
-                <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em;  font-weight: 700;  ">Kërkojmë cilësi dhe standarde të larta </p>
-                    <p style="font-size: 1em;">Standardet tona të punës duhet të jenë gjithmonë të larta dhe në përmirësim të vazhdueshëm. Ne adresojmë çdo problem në kohë dhe produktet tona janë të cilësisë së lartë. Për të qenë leader në fushën tonë, ne sigurohemi që kërkesat tona për cilësi dhe standarde të zbatohen jo vetëm nga stafi ynë por edhe nga partnerët që angazhojmë.</p>
+            <div class="row rreshtp">
+                <div class="col-lg-6 " > <p class="titullparime">Kërkojmë cilësi dhe standarde të larta </p>
+                    <p class="paragparime" >Standardet tona të punës duhet të jenë gjithmonë të larta dhe në përmirësim të vazhdueshëm. Ne adresojmë çdo problem në kohë dhe produktet tona janë të cilësisë së lartë. Për të qenë leader në fushën tonë, ne sigurohemi që kërkesat tona për cilësi dhe standarde të zbatohen jo vetëm nga stafi ynë por edhe nga partnerët që angazhojmë.</p>
                 </div>
-                <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em;  font-weight: 700; ">Gjejmë mënyra për të kursyer </p>
-                    <p style="font-size: 1em;">Të shpenzosh më shumë nuk do të thotë domosdoshmërisht cilësi dhe jetëgjatësi më e lartë. Ne gjejmë mënyra për të kursyer për klientët tanë, bazuar në kërkim tregu, thjeshtëzim problemi dhe inovacion teknikash zhvillimi. Ne nuk nxisim kosto të fryra për projektet që ndërmarrim, pasi besojmë që e bukura, funksionaliteti dhe qëndrueshmëria nuk kanë kusht eksesin në shpenzime.</p>
-                </div>
-            </div>
-    
-    
-            <div class="row" style="margin-top: 4em;">
-                <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em;  font-weight: 700; ">Respektojmë njeriun </p>
-                    <p style="font-size: 1em;">Çdo gjë që ne bëjmë është nga dhe për njeriun. Ne besojmë që çdo gjë e ngritur mbi respektin për njeriun, qoftë ai klient, punonjës, apo partner, mundëson marrëdhënie të shëndetshme bashkëpunimi. Duke dhënë shembullin tonë më të mirë në punë, ne fitojmë besimin dhe mbështetjen e atyre me të cilët punojmë. Ne ndërtojmë një ambient pune që nxit krijimtarinë dhe rritjen e vazhdueshme profesionale.</p>
-                </div>
-                <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em; font-weight: 700;  ">Besojmë tek qasja “e butë” </p>
-                    <p style="font-size: 1em;">“E buta” është virtyt dhe forcë. Ne besojmë që projektet zhvillimore që imponohen me dhunë ndaj natyrës dhe kontekstit, ndrydhin njeriun dhe dobësojnë komunitetet. “E buta” për ne i referohet jo vetëm përqasjes ndaj punës, por edhe konceptit tonë për projektet që zhvillojmë. Projektet tona kanë në qendër përkujdesjen ndaj njeriut, natyrës, dhe komunitetit.</p>
+                <div class="col-lg-6  " > <p class="titullparime">Gjejmë mënyra për të kursyer </p>
+                    <p class="paragparime">Të shpenzosh më shumë nuk do të thotë domosdoshmërisht cilësi dhe jetëgjatësi më e lartë. Ne gjejmë mënyra për të kursyer për klientët tanë, bazuar në kërkim tregu, thjeshtëzim problemi dhe inovacion teknikash zhvillimi. Ne nuk nxisim kosto të fryra për projektet që ndërmarrim, pasi besojmë që e bukura, funksionaliteti dhe qëndrueshmëria nuk kanë kusht eksesin në shpenzime.</p>
                 </div>
             </div>
     
     
+            <div class="row rreshtp ">
+                <div class="col-lg-6 "> <p class="titullparime">Respektojmë njeriun </p>
+                    <p class="paragparime">Çdo gjë që ne bëjmë është nga dhe për njeriun. Ne besojmë që çdo gjë e ngritur mbi respektin për njeriun, qoftë ai klient, punonjës, apo partner, mundëson marrëdhënie të shëndetshme bashkëpunimi. Duke dhënë shembullin tonë më të mirë në punë, ne fitojmë besimin dhe mbështetjen e atyre me të cilët punojmë. Ne ndërtojmë një ambient pune që nxit krijimtarinë dhe rritjen e vazhdueshme profesionale.</p>
+                </div>
+                <div class="col-lg-6 "> <p class="titullparime">Besojmë tek qasja “e butë” </p>
+                    <p class="paragparime">“E buta” është virtyt dhe forcë. Ne besojmë që projektet zhvillimore që imponohen me dhunë ndaj natyrës dhe kontekstit, ndrydhin njeriun dhe dobësojnë komunitetet. “E buta” për ne i referohet jo vetëm përqasjes ndaj punës, por edhe konceptit tonë për projektet që zhvillojmë. Projektet tona kanë në qendër përkujdesjen ndaj njeriut, natyrës, dhe komunitetit.</p>
+                </div>
+            </div>
     
-        <div class="row" style="margin-top: 4em;">
-          <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em; font-weight: 700;  ">Zgjidhim problemet, nuk i fshehim, nuk i justifikojmë e as i pasojmë </p>
-            <p style="font-size: 1em;">Nëse duam vërtetë të jemi partnerë të besuar të klientëve tanë, ne duhet t’i japim zgjidhjen më të mirë për atë çfarë na kanë angazhuar. Nëse hasim pengesa, ne mendojmë zgjidhjet më të mira dhe komunikojmë me klientët alternativat e mundshme. Ne jemi proaktiv dhe transparent. Klientët tanë duhet të jenë të qetë që ne do të përmbushim angazhimet ndaj tyre në kohën dhe cilësinë e dakordësuar, pa surpriza gjatë rrugës.</p>
+    
+    
+        <div class="row rreshtp">
+          <div class="col-lg-6 "> <p class="titullparime">Zgjidhim problemet, nuk i fshehim, nuk i justifikojmë e as i pasojmë </p>
+            <p class="paragparime">Nëse duam vërtetë të jemi partnerë të besuar të klientëve tanë, ne duhet t’i japim zgjidhjen më të mirë për atë çfarë na kanë angazhuar. Nëse hasim pengesa, ne mendojmë zgjidhjet më të mira dhe komunikojmë me klientët alternativat e mundshme. Ne jemi proaktiv dhe transparent. Klientët tanë duhet të jenë të qetë që ne do të përmbushim angazhimet ndaj tyre në kohën dhe cilësinë e dakordësuar, pa surpriza gjatë rrugës.</p>
           </div>
-          <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em;  font-weight: 700; ">Punojmë me më të mirët </p>
-            <p style="font-size: 1em;">Ne mund të përmbushim angazhimet tona ndaj klientëve vetëm nëse punojmë me më të mirët, qofshin ata staf, apo partner. Ne punojmë me njerëz të talentuar, ambiciozë, të apasionuar, të përkushtuar dhe punëtorë, të cilët i dalin zot detyrave dhe janë pjesëtarë të mirë ekipi.</p>
+          <div class="col-lg-6"> <p class="titullparime">Punojmë me më të mirët </p>
+            <p class="paragparime">Ne mund të përmbushim angazhimet tona ndaj klientëve vetëm nëse punojmë me më të mirët, qofshin ata staf, apo partner. Ne punojmë me njerëz të talentuar, ambiciozë, të apasionuar, të përkushtuar dhe punëtorë, të cilët i dalin zot detyrave dhe janë pjesëtarë të mirë ekipi.</p>
           </div>
         </div>
     
     
-         <div class="row" style="margin-top: 4em;">
-          <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em; font-weight: 700;  ">Mendojmë pozitivisht </p>
-            <p style="font-size: 1em;">Të fokusohesh tek e bukura dhe pozitivja në mendime dhe veprime sjell rezultate në kohët me intensitet të lartë që jetojmë. Pozitiviteti me vepra është ngjitës. Realizimi i një pune të bërë mirë është më i lehtë dhe me më shumë ndikim sesa korrigjimi, apo luftimi i një pune të bërë mbrapsht.</p>
+         <div class="row rreshtp">
+
+          <div class="col-lg-6 "><p class="titullparime">Mendojmë pozitivisht </p>
+            <p  class="paragparime">Të fokusohesh tek e bukura dhe pozitivja në mendime dhe veprime sjell rezultate në kohët me intensitet të lartë që jetojmë. Pozitiviteti me vepra është ngjitës. Realizimi i një pune të bërë mirë është më i lehtë dhe me më shumë ndikim sesa korrigjimi, apo luftimi i një pune të bërë mbrapsht.</p>
           </div>
-          <div class="col-lg-6" style="font-family: Open Sans; "> <p style="font-size: 1.2em; font-weight: 700;  ">I lemë gjërat më mirë seç i gjetëm</p>
-            <p style="font-size: 1em;">Kjo nuk është filozofi vetëm në impaktin e punës tonë, por edhe besim se kështu jemi në harmoni me dëshirat e klientëve tanë, të cilët synojnë të zhvillojnë projekte që respektojnë ambientin dhe mbeten si krenari për pasardhësit e tyre. Ndikimi i punës tonë do i qëndrojë kohës dhe çdo projekt i yni ka në konsideratë vlerat që sjell për brezat e ardhshëm.</p>
+          <div class="col-lg-6 "> <p class="titullparime">I lemë gjërat më mirë seç i gjetëm</p>
+            <p  class="paragparime">Kjo nuk është filozofi vetëm në impaktin e punës tonë, por edhe besim se kështu jemi në harmoni me dëshirat e klientëve tanë, të cilët synojnë të zhvillojnë projekte që respektojnë ambientin dhe mbeten si krenari për pasardhësit e tyre. Ndikimi i punës tonë do i qëndrojë kohës dhe çdo projekt i yni ka në konsideratë vlerat që sjell për brezat e ardhshëm.</p>
           </div>
+
         </div>
-    
+  
+        
         </div>
-    
-        <div class="col-1"> </div>
-    
+
+        <div class="col-md-1"> </div>
+      
     </div>
     
+    <img src="../assets/images/Trekonc/logotrekonc.png"  class="rresht"  id="logoopacity" >
+    <img src="../assets/images/02_03.png"  class="rresht"  id="logoopacitycel" >
+
+<footer id="footer1">
+ 
+  <a href=" https://www.google.it/maps/place/Arka/@41.3225995,19.8153568,21z/data=!4m5!3m4!1s0x135031936a7201e9:0x44e84d84f33f3543!8m2!3d41.3225784!4d19.8154776"  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: black;" class="email" >Rruga Vaso Pasha 2, Tiranë, Albania 1001 </a> | <a href="mailto: info@arka.com.al" style="text-decoration: none; color: black;" class="email" > info@arka.com.al</a> | +355 (0)4 22 51 386 
+</footer>
+
+<footer id="footercel">
+
+  <a href=" https://www.google.it/maps/place/Arka/@41.3225995,19.8153568,21z/data=!4m5!3m4!1s0x135031936a7201e9:0x44e84d84f33f3543!8m2!3d41.3225784!4d19.8154776"  target="_blank" rel="noopener noreferrer"  class="email" ><i class="fas fa-map-marker-alt"></i> </a> 
+  <a href="mailto: info@arka.com.al"  class="email" > <i class="fas fa-envelope"></i></a> 
+  <a href="tel:+35542251386"><i class="fas fa-phone"></i> </a>
+
+</footer>
+
+<div id="copyr"> &copy 2021 Shelternal | All rights reserved arka</div>
+
     </div>
 
+   
 
-    <div class="row align-items-center ">
-        <div class="col-3" >  </div>
-        <div class="col-8" id="quote">
-
-
-          <p style=" font-size: 1.5em; font-family: Open Sans; " id="Q">
-
-            <span id="nje" style="display: none;">E para jeta, <span>
-          <span style="display: none;"  id="dy"> më pas hapësirat </span>
-          <span style="display: none;" id="tre">dhe në fund ndërtesat. </span> 
-        </p>
-        </div>
-      </div>
-    
-
-
+    <div class="flex-container" id="cfareshprehje">
+      <p id="Q">
+        E para jeta, më pas hapësirat dhe në fund ndërtesat.
+       </p>
+     </div>
+  
 
 <script>
+
+
+
+$('.menubox').on('click', function() {
+    menuFunction(this);
+});
+
 var open=false;
-
 function menuFunction(x) {
-
 x.classList.toggle("change");
 
 if(!open)
 {
-document.getElementById("MainMenu").style.height = "100%";
+document.getElementsByClassName("ShtresaMenu")[0].style.height = "100%";
+document.getElementById("mmob").style.display="none";
+document.getElementById("vmob").style.display="none";
+document.getElementById("pmob").style.display="none";
 open=true;
 }
 else {
-document.getElementById("MainMenu").style.height = "0%";
+document.getElementsByClassName("ShtresaMenu")[0].style.height = "0%";
+if($(window).width() < 576)
+{
+
+document.getElementById("mmob").style.display="block";
+document.getElementById("vmob").style.display="block";
+document.getElementById("pmob").style.display="block";
+}
 open=false;
 }
 }
+
 </script>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

@@ -1,0 +1,575 @@
+body {
+    font-family: Open Sans;
+     overflow-x: hidden;
+  
+}
+
+
+#footer1 {
+  color: black;
+  font-weight: 500;
+  font-family: Open Sans;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+
+}
+
+#footercel {
+  
+  font-weight: 500;
+  font-size: 1.2em;
+  display: none;
+  justify-content: center;
+  width: 100%;
+
+}
+
+#footercel a
+          {
+          padding: 0.8em;
+          transition: 0.15s;
+          text-decoration:none;
+          color:black;
+          font-weight: 700;
+          opacity: 0.75; 
+          }
+
+#footercel a:hover {
+  color:rgb(51,63,72);
+  font-weight: bold;
+  opacity: 1;
+}
+
+
+#copyr {
+  display: flex; 
+  justify-content: center; 
+  font-size: Open Sans;
+  font-size: 1em;
+}
+@media screen and (max-width:450px) {
+  #copyr {
+    display: flex; 
+    justify-content: center; 
+    font-size: Open Sans;
+    font-size: 0.8em;
+  }
+  
+}
+.knopad {
+  padding: 0;
+}
+
+/* Nav bar */
+.containerhead {
+    top:0em;
+    left:2em; 
+    right:2em; 
+    z-index: 4; 
+    height: 4em; 
+    position:fixed; 
+    background-color:white;
+    padding-top: 1em;   
+
+  }
+
+#logo {
+     float: left;
+     padding: 0; 
+     position: absolute; 
+     height: 2.05em;
+     margin: 0;
+}
+
+.menubox {
+     width: 3em;
+     height: 2.05em;
+     cursor: pointer;
+     padding: 0;
+     margin: 0;
+     float: right;
+  }  
+
+
+ .bar1
+    {
+       width: 3em;
+       height: 0.35em;
+       transition: 0.4s;
+       background-color: rgb(52,63,71);
+    }
+ .bar2, .bar3
+    {
+       width: 3em;
+       height: 0.35em;
+       margin-top:0.5em;
+       transition: 0.4s;
+       background-color:rgb(52,63,71);
+    }
+  
+ .change .bar1 {
+    -webkit-transform: rotate(-45deg)   translate(0em,1.2em) ;
+    transform:  rotate(-45deg)   translate(0em,1.2em) ;
+    width: 2.5em;
+    
+    }
+    
+.change .bar2 {opacity: 0;}
+ .change .bar3 {
+    -webkit-transform: rotate(45deg)   translate(0em,-1.2em);
+    transform:rotate(45deg)  translate(0em,-1.2em) ;
+    width: 2.5em;
+    }
+
+
+  .pageTitle {
+      font-weight: 100; 
+      font-size: 1.5em; 
+      font-family: Open Sans;
+      padding: 0;
+      opacity: 0.6;
+      position: absolute;
+      float: center; 
+      margin-left: 4.5em; 
+      margin-top: .18em; 
+  }
+
+  .pageTitle a {
+     text-decoration: none;
+     color: rgb(51,63,72);
+  }
+
+
+ /* Navbar cel 0.8 */
+
+@media screen and (max-width: 450px) {
+
+  .containerhead {
+    top:0em;
+    left:0.8em; 
+    right:0.8em; 
+    z-index: 4; 
+    height: 4em; 
+    position:fixed; 
+    background-color:white;
+    padding-top: 1em;   
+
+  }
+
+  #logo {
+     float: left;
+     padding: 0; 
+     position: absolute; 
+     height: 1.64em;
+     margin: 0;
+}
+
+  .menubox {
+  width: 2.4em;
+  height: 1.64em;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  float: right;
+  } 
+  .bar1
+    {
+       width: 2.4em;
+       height: 0.28em;
+       transition: 0.4s;
+       background-color: rgb(52,63,71);
+    }
+    .bar2, .bar3
+    {
+       width: 2.4em;
+       height: 0.28em;
+       margin-top:0.4em;
+       transition: 0.4s;
+       background-color:rgb(52,63,71);
+    }
+
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg)   translate(0em,0.96em) ;
+      transform:  rotate(-45deg)   translate(0em,0.96em) ;
+      width: 2em;
+      
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+      -webkit-transform: rotate(45deg)   translate(0em,-0.96em);
+      transform:rotate(45deg)  translate(0em,-0.96em) ;
+      width: 2em;
+      }
+
+      .pageTitle {
+        font-weight: 100; 
+        font-size: 1.2em; 
+        font-family: Open Sans;
+        padding: 0;
+        opacity: 1;
+        position: absolute;
+        float: center; 
+        margin-left: 4.5em; 
+        margin-top: .144em; 
+    }
+  
+}
+
+/*Content  of index */
+
+#qenderindex {
+
+  margin-top: 13em; 
+  padding: 0;
+  margin-right: 2em;
+  margin-left: 2em;
+
+}
+.arkaQ
+  { 
+  animation: shela 6s ease-in-out;
+  transition-duration: 3s;
+
+  }
+  
+  @keyframes shela {
+    0% {
+          opacity: 0;
+          
+         } 
+    50% {
+           opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 570px) {
+
+  #qenderindex div:nth-of-type(1) {
+    order: 3;
+  }
+  
+  #qenderindex div:nth-of-type(2) {
+    order: 2;
+  }
+  
+  #qenderindex div:nth-of-type(3) {
+    order: 1;
+  }
+  
+ 
+}
+
+@media screen and (max-width: 570px) {
+
+    #creating {
+      padding-top: 2em;
+    }
+    #trekonc {
+      width: 65%;
+      margin-left: 2.3em;
+    }
+    #qenderindex {
+      margin-top: 10em;
+    }  
+  }
+
+
+  @media screen and (min-width: 900px)  {
+
+
+    #creating {
+      margin-left: 30%;
+    }
+    #trekonc {
+     
+      margin-left: -35%;
+    }
+
+  }
+
+/* Shtresa Menu */
+
+.ShtresaMenu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  background-color: rgba(255,255,255, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+  }
+
+.ShtresaMenu a {
+
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: 400;
+      color: rgb(51,63,72);
+      display: block;
+      transition: 0.15s;
+      }
+      
+.ShtresaMenu a:hover, .ShtresaMenu a:focus {
+
+      color:rgb(51,63,72);
+      font-weight: bold;
+
+      }
+      
+      
+.ShtresaMenu-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          justify-content: center;
+        }
+          
+ .ShtresaMenu-content .menu-social {
+          display: inline-flex;
+          margin-top: 5%;
+        
+          }
+          
+  .ShtresaMenu-content .menu-social  a
+          {
+          padding: 0.8em;
+          transition: 0.15s;
+          text-decoration:none;
+          font-weight: 100;
+          opacity: 0.75;
+          
+          }
+
+ .ShtresaMenu-content .menu-social  a:hover
+          {
+          color:rgb(51,63,72);
+          font-weight: bold;
+          opacity: 1;
+          }
+
+
+/* PC-DritanKApo */
+
+@media screen and (min-width: 1300px) {
+
+  #qenderindex {
+    margin-top:20em;
+  }
+ 
+  .ShtresaMenu a {
+    font-size: 1.8em;
+  }
+  .ShtresaMenu-content {
+    top: 30%;
+  }
+}
+
+/* KONTENT of cfare eshte Arka */
+
+.kontent  {
+  z-index: 4; 
+  display: none;
+  margin-left: 2em;
+  margin-right: 2em; 
+  margin-top:4em;
+}
+
+#cfarefoto {
+  display: block;
+}
+#cfaremobile {
+  display: none;
+}
+
+
+#parfoto {
+  display: block;
+}
+#parmobile {
+  display: none;
+}
+
+
+ .rresht {
+  margin: 0;
+  padding:0; 
+  margin-top: 15vh;
+ }
+ 
+ .rreshtp {
+  margin: 0;
+  padding:0; 
+  margin-top: 10vh;
+ }
+ 
+ .rrtitull {
+  font-weight: 700;
+  font-size: 2em; 
+  padding: 0; 
+  margin-top: -1vw;
+ }
+ 
+ .paragmisioni {
+ font-size: 1.2em; 
+ font-family: Open Sans; 
+ }
+ 
+ .titullparime {
+ font-size: 1.2em;
+ font-weight: 700;
+ 
+ }
+ .paragparime {
+ font-size: 1em;
+ 
+ }
+
+/*shkrimet per Large */
+ @media screen and (min-width: 1300px) {
+
+ 
+   .rrtitull {
+    font-weight: 700;
+    font-size: 2.4em; 
+    padding: 0; 
+    margin-top: -1vw;
+   }
+   
+   .paragmisioni {
+   font-size: 1.44em; 
+   font-family: Open Sans; 
+   }
+   
+   .titullparime {
+   font-size: 1.44em;
+   font-weight: 700;
+   
+   }
+   .paragparime {
+   font-size: 1.2em;
+   
+   }
+  
+   
+ }
+
+ div.sticky {
+ position: -webkit-sticky;
+ position: sticky;
+ top: 0;
+ top:2em;
+ }
+
+
+
+ #logoopacity {
+  opacity:0.1; 
+  margin-top:-20em; 
+  float: right;
+  width:75%;
+ }
+
+ #logoopacitycel  {
+  opacity:0.1; 
+  margin-top:-10em; 
+  float: right;
+  width: 110%;
+  display: none;
+  margin-left: -0.8em;
+  margin-right: -0.8em;
+ }
+
+
+
+/* cfare mobile */
+@media screen and (max-width: 450px) 
+{
+
+  .kontent  {
+    z-index: 4; 
+    display: none;
+    margin-left: 0.8em;
+    margin-right: 0.8em; 
+    margin-top:4em;
+  }
+  #cfarefoto {
+    display: none;
+  }
+  #cfaremobile {
+    display: block;
+  }
+  #parfoto {
+    display: none;
+  }
+  #parmobile {
+    display: block;
+  }
+  .rreshtp {
+   
+   margin-top: 5vh;
+  }
+  .rresht {
+    margin-top: 10vh;
+  }
+  .rrtitull {
+    font-size: 1.5em;
+  }
+
+  #logoopacity {
+    display: none;
+  }
+  #logoopacitycel {
+  display: block;
+}
+  #footer1 {
+  display: none;
+
+}
+
+#footercel {
+  display: inline-flex;
+  margin-top: 1em;
+  font-size: 2em;
+  opacity: 0.75;
+}
+
+}
+
+
+  /* jetesa ne qytet */
+
+
+
+  /* te jetosh me natyren */
+
+
+
+    /* njerzit tane */
+
+.more {display: none;}
+
+#read1 {
+  cursor: pointer;
+}
+#read2 {
+  cursor: pointer;
+}
+
+.email:hover { 
+    font-weight: bold; 
+}
+
+
+

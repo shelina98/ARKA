@@ -1,11 +1,18 @@
+<meta name="description" content="arka – Creating unique and sustainable spaces for extraordinary life experience">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>arka</title>
+  <link rel="home" href="//www.arka.com.al/" />
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-<style type="text/css"></style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="arka.css">
 
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
@@ -19,194 +26,120 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  
-
   <script>
 
-    $(function(){
+      $(function(){
 
 setTimeout(function(){
 
-$("#Q").fadeOut("slow")} ,6000)
-
+  $("#cfareshprehje").fadeOut("slow") } , 8500)
 });
 
-
 </script>
+
 <script >
 
-    $(function(){
+      $(function(){
 
 setTimeout(function(){
-$("#foto1").fadeIn("slow")} , 6000)
+ $(".kontent").fadeIn("slow")} , 8500)
 
 });
 </script>
-
 </head>
 
 <style type="text/css">
 
-.containerhead {
-  top:0em;
-  left:2em; 
-  right:2em; 
-  z-index: 4; 
-  height: 4em; 
-  position:fixed; 
-  background-color:white;
-  padding-top: 1em; 
- 
- 
+#Q
+{ animation: shela 3s ease-in-out;
+  transition-duration: 1.5s;
+  font-size: 1.5em;
+  font-family: Open Sans;  
+  text-align: center;
 }
-  .bar1
-  {
-     width: 3em;
-     height: 0.35em;
-     transition: 0.4s;
-     background-color: rgb(51,63,72);
-  }
-  .bar2, .bar3
-  {
-     width: 3em;
-     height: 0.35em;
-     margin-top:0.5em;
-     transition: 0.4s;
-     background-color: rgb(51,63,72);
-  }
-
-  .change .bar1 {
-  -webkit-transform: rotate(-45deg)   translate(0em,1.2em) ;
-  transform:  rotate(-45deg)   translate(0em,1.2em) ;
-  width: 2.5em;
-  
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-  -webkit-transform: rotate(45deg)   translate(0em,-1.2em);
-  transform:rotate(45deg)  translate(0em,-1.2em) ;
-  width: 2.5em;
-  }
-
-.menu {
-width: 3em;
-height: 2.5em;
-cursor: pointer;
-padding: 0;
-margin: 0;
-}
-
-
-
-
-
-#logo {
- width: 7vw;
-height: 2.5vw;
+#cfareshprehje {
+      margin-left:2em;
+      margin-right: 2em;
+      padding: 0;
+      height: 100%;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+ }
+ #mob,#dkcel,#ascel {
+   display: none;
  }
 
+ #scel {
+  display: none;
+   background-color: white;
+   z-index: 2;
+ }
+  @media screen and (min-width: 900px)  {
 
-.overlay {
-height: 0%;
-width: 100%;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background-color: white;
-background-color: rgba(255,255,255, 1);
-overflow-y: hidden;
-transition: 0.5s;
+
+      #Q {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+
 }
-
-
-.gallery
+@media screen and (min-width: 1300px)  {
+  #Q {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width:576px) 
 {
-position: fixed;
-z-index: -4;
-transition: 0.5s;
+  #cfareshprehje {
+      margin-left:0.8em;
+      margin-right: 0.8em;
+      padding: 0;
+    }
+ 
+  #Q {
+    font-size: 1.5em ;
+  }
+  #mob,#dkcel,#ascel {
+    display: block;
+   
+  }
+  #pc,#dkpc, #aspc {
+    display: none;
+  }
+  #spc {
+    display: none;
+  }
+  #scel {
+    display: block;
+  }
 }
-
-
-
-
-.overlay-content {
-position: relative;
-top: 15%;
-width: 100%;
-text-align: center;
-justify-content: center;
-margin-top: 3em;
-
-}
-
-.overlay a {
-text-decoration: none;
-font-size: 1.5em;
-font-weight: 400;
-color: rgb(51,63,72);
-display: block;
-transition: 0.15s;
-}
-
-.overlay a:hover, .overlay a:focus {
-color: black;
-font-weight: 500;
-}
-
-@media screen and (max-height: 450px) {
-.overlay {overflow-y: auto;}
-.overlay a {font-size: 20px}
-.overlay .closebtn {
-font-size: 40px;
-top: 15px;
-right: 35px;
-}
-}
-
-.overlay-content .menu-social {
-display: inline-flex;
-margin-top: 1.5em;
-}
-
-.overlay-content .menu-social  a
+@media screen and (width:576px) 
 {
-padding: 0.8em;
-transition: 0.15s;
-text-decoration:none;
-
+  #cfareshprehje {
+      margin-left:0.8em;
+      margin-right: 0.8em;
+      padding: 0;
+    }
+ 
+  #Q {
+    font-size: 1.5em ;
+  }
+  #mob,#dkcel,#ascel {
+    display: none;
+   
+  }
+  #pc,#dkpc, #aspc {
+    display: block;
+  }
+  #spc {
+    display: block;
+  }
+  #scel {
+    display: none;
+  }
 }
-.overlay-content .menu-social  a:hover
-{
-color:rgb(51,63,72);
-font-weight: bold;
-}
-
-
-
-#quote {
-margin-top:15em;
-
-}
-
-#image {
-animation: shela 3s ease-in-out;
-transition-duration: 1s;
-}
-
-#pagecontent {
-
-margin-left: 3vw;
-z-index: -2;
-}
-
-#Q
-{animation: shela 4s ease-in-out;
-transition-duration: 1.5s;
-}
-
 @keyframes shela {
   0% {
         opacity: 0;
@@ -217,51 +150,71 @@ transition-duration: 1.5s;
   }
 }
 
+.image {
+        position: relative;
+        width: 100%;
 
-#logo {
-    float: left;
-     padding: 0; 
-     position: absolute; 
-}
+    }
 
-.pageTitle {
-    font-weight: 100; 
-    font-size: 1.5em; 
-    font-family: Open Sans;
-    padding: 0;
-    opacity: 0.6;
-    position: absolute;
-    float: center; 
-    margin-left: 4.5em; 
-    margin-top: .18em; 
-}
+    .image__img {
+        display: block;
+        width: 100%;
 
-.more {display: none;}
-#read1 {
-    cursor: pointer;
-}
-#read2 {
-    cursor: pointer;
-}
+    }
+    .image__overlay {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
+        display: flex;
+        font-family: Open Sans;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        opacity: 0;
+        transition: opacity 0.25s;
+        
+    }
+    .image__overlay:hover {
+        opacity: 1;
+    }
 
-.email:hover {
-  
-    
-    font-weight: bold; 
-}
+    .phonenumber {
+        font-size: 1em;
+        color: black;
+        text-decoration: none;
+    }
+    .phonenumber:hover{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .emailaddress .email{
+        font-size: 1em;
+        margin-top: 0.2em;
+    }
+    div.sticky4 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  top:2.5em;
 
+}
 </style>
 
 <body>
 
 <div class="containerhead">
-     <a href="index.html"> <img src="../assets/images/logo.png" id="logo"> </a>
+        <a href="index.html"> <img src="../assets/images/Trekonc/logo.png" id="logo"> </a>
 
- <p class="pageTitle">
-
- <a href="njerezit-tane.html" style="text-decoration: none; color: rgb(51,63,72);"> Njerëzit tanë</a>
+ <p  class="pageTitle">
+ <a href="njerezit-tane.html">Njerëzit tanë </a>
 </p>
-<div  class="container menu" style="float: right; padding: 0; " onclick="menuFunction(this)" >
+
+<div  class="container menubox" >
    <div class="bar1"></div>
    <div class="bar2"></div>
    <div class="bar3"></div>
@@ -269,8 +222,9 @@ transition-duration: 1.5s;
 </div>
 </div>
 
-<div id="MainMenu" class="overlay" >
-<div class="overlay-content">
+<div  class="ShtresaMenu" >
+<div class="ShtresaMenu-content">
+
 
   <a href="cfare-eshte-arka.html" >Çfarë është Arka</a>           
   <a href="jetesa-ne-qytet.html" >Jetesa në Qytet</a>
@@ -278,146 +232,179 @@ transition-duration: 1.5s;
   <a href="sherbimet-tona.html" >Shërbimet tona</a>
   <a href="perqasja.html" >Përqasja</a>
   <a href="njerezit-tane.html" >Njerëzit tanë</a>
-  <a href="#" >Punimet tona </a>
+  <a href="#" >News </a>
 
 <nav class="menu-social" >
 
-<a href="https://www.facebook.com/arkaexperience/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-<a href="https://www.instagram.com/arka_concept/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-<a href="#"> EN </a>
+  <a href="https://www.facebook.com/arkaexperience/" ><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/arka_concept/" ><i class="fab fa-instagram"></i></a>
+  <a href="#" ><i class="fab fa-twitter"></i> </a>
+  <a href="#" > <i class="fab fa-linkedin-in"></i></a>
 
 </nav>
 </div>
 </div>
 
 
-<div style="z-index: 4; display: none; margin-left: 2em; margin-right: 2em; margin-top:4em;" id="foto1">
+<div class="kontent" >
 
 
-    <div class="row" >
 
-     
-        <div class="col-3" style="margin-top: 2em; text-align: right;">
-            <p  style="font-family: Open Sans; font-size: 1em; margin-top: 0.5em;"> <a href="mailto:dkapo@arka.com.al" style="text-decoration: none; color: black;" class="email" >dkapo@arka.com.al</a> </p>
-            <p  style="font-family: Open Sans; font-size: 1em; margin-top: -1em;"> +355 68 908 6047 </p> 
+    <div class="row rresht "  >
+        <div class=" col-md-3 col-lg-2 ">
+<div class="image">
+    <img class="image__img" src="../assets/images/people/dk.jpg" id="dkpc">
+    <img class="image__img" src="../assets/images/people/dkcel.jpg" id="dkcel">
+    <div class="image__overlay">
+        <a  href="tel:+355689086047" class="phonenumber">+355 68 908 6047</a>
+        <div class="emailaddress">
+            <a href="mailto:dkapo@arka.com.al" style="text-decoration: none; color: black;" class="email" >dkapo@arka.com.al</a> 
+        </div>
+    </div>
+</div>
+        </div>
 
+    <div class=" col-md-3 col-lg-4 "> 
+
+            <p class="paragmisioni" style="margin-bottom: 0;">Dritan KAPO, Co-Founder </p> 
+            <p class="titullparime">Creative Director </p>
+            <p clas="paragparime" style="padding-bottom: 10vh;"> Dritan Kapo është arkitekt dhe lektor pranë FAU, në Universitetin Politeknik të Tiranës. Ai diplomohet me Master Shkencor në Arkitekturë pranë Universitetit të Firences <span class="dots">...</span> <span class="more">dhe prej më shumë se një dekade ushtron profesionin në projektimin dhe zbatimin arkitektonik. Ekspertiza e tij profesionale përqëndrohet në strukturat e banimit, dëfrimit dhe ato të mikpritjes, nëpërmjet projekteve që promovojnë aspektet identitare dhe trashëgiminë kulturore-natyrore. Hulumtimi i tij akademik përqendrohet në zhvillimin e qëndrueshëm urban-rural, adaptimin arkitektonik, projektimin dhe teknologjinë arkitekturore. </span>  <span onclick="read1Function()" id="read1" style="font-weight: bold; ">Read more</span></p>
+          </div>
+
+
+
+          <div class=" col-md-3 col-lg-2 ">
+    
+            <div class="image">
+                <img class="image__img" src="../assets/images/people/as.jpg" id="aspc">
+                <img class="image__img" src="../assets/images/people/ascel.jpg" id="ascel">
+                <div class="image__overlay">
+                    <a  href="tel:+355672779119" class="phonenumber">+355 67 277 9119 </a>
+                    <div class="emailaddress">
+                        <a href="mailto:astringa@arka.com.al" style="text-decoration: none; color: black;" class="email" >astringa@arka.com.al</a> 
+                    </div>
+                </div>
             </div>
-            <div class="col-3" style="margin-top: 2em;"> 
-            <p style="font-family: Open Sans; font-size: 1.2em;">Dritan KAPO, Co-Founder <span style="font-weight: bold;">Creative Director</span> </p>
+
         </div>
-        <div class="col-3" style="margin-top: 2em; text-align: right;"> 
-            <p  style="font-family: Open Sans; font-size: 1em; margin-top: 0.5em;"> <a href="mailto:astringa@arka.com.al" style="text-decoration: none; color: black;" class="email">astringa@arka.com.al</a> </p>
-            <p  style="font-family: Open Sans; font-size: 1em; margin-top: -1em;"> +355 67 277 9119 </p> 
-        </div>
-        <div class="col-3" style="margin-top: 2em;"> <p style="font-family: Open Sans; font-size: 1.2em;">Azmi STRINGA, Co-Founder  <span style="font-weight: bold;">Operations & Finance Director</span></p></div>
+
+    <div class=" col-md-3 col-lg-4 "> 
+
+            <p class="paragmisioni" style="margin-bottom: 0;">Azmi STRINGA, Co-Founder  </p> 
+            <p class="titullparime"> Operations & Finance Director</p>
+            <p clas="paragparime">Azmi Stringa ka përfunduar studimet në McCombs School of Business të Universitetit të Teksasit në Austin. Ai është lektor i disa lëndëve të financës pranë University of <span class="dots">...</span> <span class="more">New York Tirana. Stringa është Certified Public Accountant në shtetin e Nju Jorkut, ku dhe filloi karrierën në fushën e shërbimeve financiare. Ai ka një eksperiencë të gjatë profesionale në SHBA dhe Shqipëri. I angazhuar në sektorin bankar, tregjet kapitale, dhe financat publike, Stringa ka drejtuar me sukses ekipe, projekte, dhe angazhime të rëndësishme në nivel kombëtar dhe ndërkombëtar. </span>  <span onclick="read2Function()" id="read2" style="font-weight: bold; ">Read more</span></p>
+          </div>
 
 
     </div>
-
-        <div class="row" >
-             
-            <div class="col-3" > <img src="../assets/images/people/dk.jpg" width="100%;"></div>
-            <div class="col-3" > 
-                <p style="font-family: Open Sans; font-size: 1em;">Dritan Kapo është arkitekt dhe lektor pranë FAU, në Universitetin Politeknik të Tiranës. Ai diplomohet me Master Shkencor në Arkitekturë<span class="dots">...</span> <span class="more">pranë Universitetit të Firences dhe prej më shumë se një dekade ushtron profesionin në projektimin dhe zbatimin arkitektonik. Ekspertiza e tij profesionale përqëndrohet në strukturat e banimit, dëfrimit dhe ato të mikpritjes, nëpërmjet projekteve që promovimojnë aspektet identitare dhe trashëgiminë kulturore-natyrore. Hulumtimi i tij akademik përqëndrohet në zhvillimin e qëndrueshëm urban-rural, adaptimin arkitektonik, projektimin dhe teknologjinë arkitekturore. </span>  <span onclick="read1Function()" id="read1" style="font-weight: bold; ">Read more</span></p>
-                
-           
-            </div>
-            <div class="col-3" > <img src="../assets/images/people/as.jpg" width="100%;"></div>
-            <div class="col-3" >
-                <p style="font-family: Open Sans; font-size: 0.95em;">Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short <span class="dots">...</span> <span class="more"> bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion.Amushi duhet ta beje sa me shpejt short bion. </span> <span onclick="read2Function()" id="read2" style="font-weight: bold; ">Read more</span></p>
-            </div>
-
-
-        </div>
-
-
-        <div class="row" style="margin-top: 10em;">
-        
-            <div class="col-3">
-                <p style="font-size:2em; font-weight: 700; font-family: Open Sans;">Partnerët tanë</p>
-                <img src="../assets/images/people/faces02.png" width="100%;" style="margin-top: 7.5em;"> 
-            </div>
-        <div class="col-1"></div>
-            <div class="col-7" >
-              <p style="font-family: Open Sans; font-size: 1.2em;">Për të maksimizuar vlerën e projekteve zhvillimore dhe përmbushur me sukses angazhimet tona ndaj klientëve, Arka mbështetet në një rrjet të gjerë partnerësh të jashtëm. Këta profesionistë dhe kërkues shkencorë kanë ekspertizë në aspekte të rëndësishme për suksesin e projekteve zhvillimore si: politika sociale, dizajn, arkitekturë dhe projektim urban, transport të qëndrueshëm, aspekte ligjore dhe rregullatore, vlerësime tregu dhe pronash të paluajtshme, mirëqenie komunitare, planifikim urban dhe mjedisor, dhe projekte kulturore e artistike.</p>
-              <p style="font-family: Open Sans; font-size: 1.2em;">Arka gjithashtu bashkëpunon me organizata private dhe publike për të adresuar më mirë sfidat e sektorit dhe kërkesat e klientëve, vecanërisht aspekte si: nxitja e marrëdhënieve të shëndetshme njerëzore, promovimi i burimeve vendase, mbrojtja e trashëgimisë kulturore dhe asaj mjedisore.</p>
-              <p style="font-family: Open Sans; font-size: 1.2em;">Nëse dëshironi të beheni pjesë e familjes së Arkës, ju lutemi të dërgoni aplikimin, CV, dhe portfolin tuaj në adresën tonë të kontaktit <a href="mailto:info@arka.com.al" style="text-decoration: none; color: black; " class="email">info@arka.com.al </p>
-            
-            </div>
-      
-         </div>
-
- </div>
-        
-      
  
-
-    <div class="row align-items-center ">
-        <div class="col-2" > </div>
-        <div class="col-8" id="quote">
-          <p style=" font-size: 1.5em; font-family: Open Sans;  font-weight: 100;" id="Q">
-            Arka ka bërë bashkë një grup profesionistësh me ekspertizë shumë disiplinore në shërbim të klientëve dhe projekteve zhvillimore.
-        </p>
+    <div class="row rresht">
+        
+        <div class=" col-sm-3 knopad">
+          <div class="sticky rrtitull" id="spc" > Partnerët tanë</div>
         </div>
-      </div>
-    
-
-      <script>
-
-function read1Function() {
-  var dots = document.getElementsByClassName("dots");
-  var moreText = document.getElementsByClassName("more");
-  var read1 = document.getElementById("read1");
-  if (dots[0].style.display === "none") {
-    dots[0].style.display = "inline";
-    read1.innerHTML = "Read more"; 
-    moreText[0].style.display = "none";
-  } else {
-    dots[0].style.display = "none";
-    read1.style.display="none"; 
-    moreText[0].style.display = "inline";
-  }
-}
-</script>
-<script>
-function read2Function() {
-    var dots = document.getElementsByClassName("dots");
-    var moreText = document.getElementsByClassName("more");
-    var read2 = document.getElementById("read2");
-
-    if (dots[1].style.display === "none") {
-      dots[1].style.display = "inline";
-      read2.innerHTML = "Read more"; 
-      moreText[1].style.display = "none";
-    } else {
-      dots[1].style.display = "none";
-      read2.style.display="none"; 
-      moreText[1].style.display = "inline";
-    }
-  }
-  </script>
+        <div class="col-sm-1"></div>
+        <div class=" col-sm-7 knopad">
+          <div class="sticky4 rrtitull"  id="scel"> Partnerët tanë</div>
+          <img src="../assets/images/people/fytyra-skema4.png" width="55%;"  id="pc" > 
+          <img src="../assets/images/people/fytyra-skema4.png" width="100%;"  style =" margin-top: 2em;"id="mob" > 
+          <p class="paragmisioni" style="margin-top: 2em;">Për të maksimizuar vlerën e projekteve zhvillimore dhe përmbushur me sukses angazhimet tona ndaj klientëve, Arka mbështetet në një rrjet të gjerë partnerësh të jashtëm. Këta profesionistë dhe kërkues shkencorë kanë ekspertizë në aspekte të rëndësishme për suksesin e projekteve zhvillimore si: politika sociale, dizajn, arkitekturë dhe projektim urban, transport të qëndrueshëm, aspekte ligjore dhe rregullatore, vlerësime tregu dhe pronash të paluajtshme, mirëqenie komunitare, planifikim urban dhe mjedisor, dhe projekte kulturore e artistike.</p>
+          <p class="paragmisioni">Arka gjithashtu bashkëpunon me organizata private dhe publike për të adresuar më mirë sfidat e sektorit dhe kërkesat e klientëve, vecanërisht aspekte si: nxitja e marrëdhënieve të shëndetshme njerëzore, promovimi i burimeve vendase, mbrojtja e trashëgimisë kulturore dhe asaj mjedisore.</p>
+          <p class="paragmisioni "> Nëse dëshironi të beheni pjesë e familjes së Arkës, ju lutemi të dërgoni aplikimin, CV, dhe portfolin tuaj në adresën tonë të kontaktit <a href="mailto: info@arka.com.al" style="text-decoration: none; color: black;" class="email" > info@arka.com.al </a></p>
+        
+        </div>
   
+     </div>
 
 
+<img src="../assets/images/Trekonc/logotrekonc.png"  class="rresht"  id="logoopacity"  >
+<img src="../assets/images/02_03.png"  class="rresht"  id="logoopacitycel" >
 
-<script>
+<footer id="footer1">
+ 
+  <a href=" https://www.google.it/maps/place/Arka/@41.3225995,19.8153568,21z/data=!4m5!3m4!1s0x135031936a7201e9:0x44e84d84f33f3543!8m2!3d41.3225784!4d19.8154776"  target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: black;" class="email" >Rruga Vaso Pasha 2, Tiranë, Albania 1001 </a> | <a href="mailto: info@arka.com.al" style="text-decoration: none; color: black;" class="email" > info@arka.com.al</a> | +355 (0)4 22 51 386 
+</footer>
+
+<footer id="footercel">
+
+  <a href=" https://www.google.it/maps/place/Arka/@41.3225995,19.8153568,21z/data=!4m5!3m4!1s0x135031936a7201e9:0x44e84d84f33f3543!8m2!3d41.3225784!4d19.8154776"  target="_blank" rel="noopener noreferrer"  class="email" ><i class="fas fa-map-marker-alt"></i> </a> 
+  <a href="mailto: info@arka.com.al"  class="email" > <i class="fas fa-envelope"></i></a> 
+  <a href="tel:+35542251386"><i class="fas fa-phone"></i> </a>
+
+</footer>
+
+<div id="copyr"> &copy 2021 Shelternal | All rights reserved arka</div>
+    </div>
+
+   
+
+    <div class="flex-container" id="cfareshprehje">
+      <p id="Q">
+        Arka ka bërë bashkë një grup profesionistësh me ekspertizë shumë disiplinore në shërbim të klientëve dhe projekteve zhvillimore.
+       </p>
+     </div>
+     <script>
+
+        function read1Function() {
+          var dots = document.getElementsByClassName("dots");
+          var moreText = document.getElementsByClassName("more");
+          var read1 = document.getElementById("read1");
+          if (dots[0].style.display === "none") {
+            dots[0].style.display = "inline";
+            read1.innerHTML = "Read more"; 
+            moreText[0].style.display = "none";
+          } else {
+            dots[0].style.display = "none";
+            read1.style.display="none"; 
+            moreText[0].style.display = "inline";
+          }
+        }
+        </script>
+        <script>
+        function read2Function() {
+            var dots = document.getElementsByClassName("dots");
+            var moreText = document.getElementsByClassName("more");
+            var read2 = document.getElementById("read2");
+        
+            if (dots[1].style.display === "none") {
+              dots[1].style.display = "inline";
+              read2.innerHTML = "Read more"; 
+              moreText[1].style.display = "none";
+            } else {
+              dots[1].style.display = "none";
+              read2.style.display="none"; 
+              moreText[1].style.display = "inline";
+            }
+          }
+          </script>
+
+ <script>
+   $('.menubox').on('click', function() {
+    menuFunction(this);
+});
+
 var open=false;
-
 function menuFunction(x) {
-
 x.classList.toggle("change");
 
 if(!open)
 {
-document.getElementById("MainMenu").style.height = "100%";
+document.getElementsByClassName("ShtresaMenu")[0].style.height = "100%";
+document.getElementById("scel").style.display="none";
+
 open=true;
 }
 else {
-document.getElementById("MainMenu").style.height = "0%";
+document.getElementsByClassName("ShtresaMenu")[0].style.height = "0%";
+
+if($(window).width() < 576)
+{
+document.getElementById("scel").style.display="block";
+}
 open=false;
 }
 }
-</script>
+ </script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
